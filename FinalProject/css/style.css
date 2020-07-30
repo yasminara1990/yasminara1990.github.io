@@ -1,0 +1,275 @@
+body{
+    background-image: url(img/bats.gif);
+    background-repeat: repeat-x repeat-y;
+    margin: 0;
+    font-family: sans-serif!important;
+
+}
+main{
+    box-shadow: 0px 5px 10px 7px black;
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #fff;
+
+}
+.body{
+    padding-left: 20px;
+}
+.header{
+    padding-left: 0!important;
+    padding: 20px 0px 20px 0;
+    border-bottom: 2px solid black;
+    background: rgb(246,246,246);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 75%, rgba(252,176,69,1) 100%);
+}
+
+h1{
+    font-weight: 900;
+}
+h4{
+    font-weight: 900;
+    padding-left: 30px;
+
+}
+
+html {
+    color: #000;
+    font-family: sans-serif; /* 3 */
+    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+}
+.top{
+    float: left;
+ 
+
+}
+h1,h3,h4{
+    margin: 0!important;
+}
+
+span{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+p{
+    font-size: 14px;;
+}
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar ul li a{
+    color: #000;
+    font-weight: bolder;
+    line-height: 1.3rem;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+.sidebar ul li{
+    background-color: #FF9400;
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #000;
+ 
+}
+h3{
+    font-weight: 900;
+    margin: 0;
+}
+footer p{
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+footer{
+    border-top: 1px solid black;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 75%, rgba(252,176,69,1) 100%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    clear: both;
+}
+.sidebar{
+    width: 160px;
+    float: left;
+    clear: both;
+    padding-right: 20px;
+}
+
+
+.pro{
+    color: #FD9E08;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+
+.main-nav ul{
+    list-style-type: none;
+    background-color: #000;
+    margin: 0!important;
+
+}
+.main-nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+
+
+}
+.main-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.main-nav ul li a.active{
+    color: orange;
+}
+.main-nav ul li a:hover{
+    color: #FD9E08;
+    transition: 0.5s ease;
+}
+
+.sub-nav ul{
+    display: none;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 0px;
+
+
+}
+.sub-nav ul li{
+    color: black;
+  padding: 20px 40px;
+  text-decoration: none;
+  display: block;
+}
+.sub-nav ul li a:hover{
+    color: #fff;
+}
+.sub-nav ul li:hover{
+    background-color: gray;
+    color: #fff!important;
+  padding: 20px 40px!important;
+
+}
+.sub-nav:hover ul {
+    display: block;
+}
+.head1{
+    color: gray;
+    text-align: left;
+}
+.va {
+    vertical-align: top;
+    text-align: left;
+}
+table{
+    float: left;
+    overflow: hidden;
+    width: 460px;
+    margin-bottom: 15px!important;
+}
+
+.pr{
+    margin-left: 20px!important;
+}
+.head1 th{
+    padding: 10px 0;
+
+}
+table td{
+    padding: 5px 0;
+    font-size: 15px;
+    color: black;
+}
+table td a{
+    color: black;
+}
+.pin {
+    text-align: center;
+    font-size: 15px;
+    background-color: #F5DEB3;
+}
+.
+/*My Code*/
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#top {
+  width: 100%;
+  background-color: red;
+  height: 15%;
+}
+#bottom {
+  width: 90%;
+  background-color: white;
+  height: 50%;
+}
+.inner {
+  width:70%;
+  height: 70%;
+/*  border: 1px solid #F5DEB3;*/
+  float: left;
+  text-align: justify;
+}
+
+.scroll-slow {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: white;
+ color: black;
+ border: none;
+ font-weight: bold
+}
+.scroll-slow p {
+ position: absolute;
+ width: 100%;
+ height: auto;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-slow 25s linear infinite;
+ -webkit-animation: scroll-slow 25s linear infinite;
+ animation: scroll-slow 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-slow {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

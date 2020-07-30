@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Auburn University at Montgomery</title>
+        <script src="/FinalProject/js/jquery.min.js"></script>
+        <link rel="icon" href="/FinalProject/logo/aum_logo.JPG" type="image/png">
+        <link rel="stylesheet" href="/FinalProject/css/main.css">
+        <link rel="stylesheet" href="/FinalProject/css/normalize.css">
+    <style>
+
+        body {    
+            text-align: center;    
+            color: black;    
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {    
+            border-collapse: separate;    
+            border-spacing: 35px 0;    
+        }
+        td {    
+            padding: 10px 0;    
+        }
+        .displayForm {
+            display: none;            
+        }
+
+   </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <a href="../../index.html"><img class="top" src="/FinalProject/logo/aum_logo.JPG" alt="Avatar"></a>
+
+
+                <h2>
+                    Auburn University at Montgomery
+                </h2>
+                 
+                <h4>
+                    Knowledge is power!
+                </h4>
+            </div>
+            <div class="main-nav">                
+                <ul>                    
+                    <li class="sub-nav"><a href="#">ACADEMICS</a>
+                        <ul>
+                            <li><a href="../subpage/cs.html">COMPUTER SCIENCE</a></li>                                
+                            <li><a href="../subpage/department.html">DEPARTMENTS</a></li>
+                            <li><a href="../subpage/admission.html">ADMISSIONS</a></li>
+                            <li><a href="">MISCELLENEOUS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><a href="../library.html">LIBRARY</a></li>
+                    <li><a href="../research.html">RESEARCH</a></li>
+                    <li><a href="../health.html">HEALTH</a></li>
+                    <li><a href="../athletics.html">ATHLETICS</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="TA_form.html">Apply for TA</a>
+                    </li>
+                    <li>
+                        <a href="gpa_calculator.html">GPA Calculator</a>
+                    </li>
+                    <li>
+                        <a href="student_email_register.html">Student Email</a>
+                    </li>
+                    <li>
+                        <a href="#">Register Class</a>
+                    </li>
+                    <li>
+                        <a href="#">Financial Aid</a>
+                    </li>
+                    <li>
+                        <a href="#">Your Account</a>
+                    </li>
+                </ul>
+            </div>
+            <section>
+                <form action="ta.php" method="post">
+                    <table align=Center>
+                        <tr>                
+                            <td align="right">Full Name: </td>                
+                            <td colspan="3"><input type="text" name="fullName" id="fullName" size=35px required></td>           
+                        </tr>
+                    
+                        <tr>                
+                            <td align="right">ID: </td>                
+                            <td colspan="3"><input type="text" name="studentId" id ="studentId" size=35px required></td>         
+                        </tr>
+                        
+                        <tr>                
+                            <td align="right">Gender: </td>                
+                            <td><input type="radio" name="gender" id="gender" value="male" checked> Male</td>                
+                            <td><input type="radio" name="gender" id="gender" value="female"> Female</td>                
+                        </tr>
+                    
+                        <tr>                
+                            <td align="right">Interested in: </td>                
+                            <td><input type="checkbox" id="post" value="Teaching Assistant"> TA</td>                
+                            <td><input type="checkbox" id="post" value="Graduate Assistant"> GA</td>                
+                            <td><input type="checkbox" id="post" value="Research Assistant"> RA</td>                
+                        </tr>
+                        <tr>                
+                            <td align="right">Submission Date: </td>                
+                            <td colspan="3"><input type="text" name="submissionDate" id ="submissionDate" size=35px placeholder="MM/DD/YYYY" required></td>                
+                        </tr>
+                        <tr>                
+                            <td align="right">Comment:</td>                
+                            <td colspan=3>                
+                            <textarea name="Comment" id= "Comment" rows="5" cols=35px required></textarea>                
+                            </td>                
+                        </tr>
+                    
+                        <tr>                
+                            <td></td>                
+                            <td colspan="2"><input type="button" value="Apply" id="apply"></td>                
+                            <td></td>                
+                        </tr>
+                    </table>
+                    
+                    
+                    <div class="displayForm" id="displayForm">
+                        <p>Your application has been successfully submitted. Your submitted your data..............</p>
+                        <table align=Center>
+                        <tr>                
+                            <td align="right">Full Name: </td>                
+                            <td colspan="3"><input type="text" name="fullName" id="fullName1" value="" size=35px disabled></td>                
+                        </tr>
+                    
+                        <tr>                
+                            <td align="right">ID: </td>                
+                            <td colspan="3"><input type="text" name="studentId" id ="studentId1" value="" size=35px disabled></td>                
+                        </tr>
+                        
+                        <tr>                
+                            <td align="right">Gender: </td>                
+                            <td><input type="text" name="gender" id="gender1" value="" disabled></td>             
+                        </tr>
+                    
+                        <tr>                
+                            <td align="right">Interested in: </td>                
+                            <td><input type="text" id="post1" value="" disabled></td>                
+                        </tr>
+                        <tr>                
+                            <td align="right">Submission Date: </td>                
+                            <td colspan="3"><input type="text" name="submissionDate" id ="submissionDate1" value="" size=35px disabled></td>                
+                        </tr>
+                        <tr>                
+                            <td align="right">Comment:</td>                
+                            <td colspan=3>                
+                            <textarea name="Comment" id= "Comment1" rows="5" value="" cols=35px disabled></textarea>                
+                            </td>                
+                        </tr>
+                    </table>
+                    </div>
+                </form>
+            </section>
+            
+            
+            <footer>
+                <p>&copy Auburn University at Montgomery</p>
+                <p>Built by: Yasmin Ara</p>
+                <p>mara@aum.edu</p>
+            </footer>
+        </main>
+        
+        <script>
+            $(document).ready(function(){
+                
+                $("#apply").click(function(){
+                    var fullName = $("#fullName").val();
+                    var studentId = $("#studentId").val();
+                    var submissionDate = $("#submissionDate").val();
+                    var Comment = $("#Comment").val();
+                    var gender = $('input[name="gender"]:checked').val(); 
+                    var post = $("#post").prop('checked', true).val();
+                    
+                    $("#fullName1").val(fullName);
+                    $("#studentId1").val(studentId);
+                    $("#submissionDate1").val(submissionDate);
+                    $("#Comment1").val(Comment);
+                    $("#gender1").val(gender);
+                    $("#post1").val(post);
+                    $("#displayForm").show();
+                    
+                    $("#fullName").val("");
+                    $("#studentId").val("");
+                    $("#submissionDate").val("");
+                    $("#Comment").val("");
+                    $('input[name="gender"]:checked').val(false); 
+                    $("#post").prop('checked', false);
+                    $("#apply").hide();
+                });                
+            });
+            
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Auburn University at Montgomery</title>
+        <script src="/FinalProject/js/jquery.min.js"></script>
+        <link rel="icon" href="/FinalProject/logo/aum_logo.JPG" type="image/png">
+        <link rel="stylesheet" href="/FinalProject/css/main.css">
+        <link rel="stylesheet" href="/FinalProject/css/normalize.css">
+        
+    <style>
+       body {
+           font-family: Arial, Helvetica, sans-serif;
+/*           background-color: black;*/
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+/*            background-color: white;*/
+        }
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        
+        /* Set a style for the submit button */
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            opacity: 0.9;
+            align-content: center;
+        }
+        .logbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            opacity: 0.9;
+            align-content: center;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+        
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .another_container{
+            
+            display: none;
+        }
+        .display {
+            display:none;
+        }
+        .login_display_container {
+            display: none;
+        }
+
+   </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="header">
+                <a href="../../index.html"><img class="top" src="/FinalProject/logo/aum_logo.JPG" alt="Avatar"></a>
+
+
+                <h2>
+                    Auburn University at Montgomery
+                </h2>
+                 
+                <h4>
+                    Knowledge is power!
+                </h4>
+            </div>
+            <div class="main-nav">                
+                <ul>                    
+                    <li class="sub-nav"><a href="#">ACADEMICS</a>
+                        <ul>
+                            <li><a href="../subpage/cs.html">COMPUTER SCIENCE</a></li>                                
+                            <li><a href="../subpage/department.html">DEPARTMENTS</a></li>
+                            <li><a href="../subpage/admission.html">ADMISSIONS</a></li>
+                            <li><a href="">MISCELLENEOUS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><a href="../library.html">LIBRARY</a></li>
+                    <li><a href="../research.html">RESEARCH</a></li>
+                    <li><a href="../health.html">HEALTH</a></li>
+                    <li><a href="../athletics.html">ATHLETICS</a></li>
+                </ul>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="TA_form.html">Apply for TA</a>
+                    </li>
+                    <li>
+                        <a href="gpa_calculator.html">GPA Calculator</a>
+                    </li>
+                    <li>
+                        <a href="student_email_register.html">Student Email</a>
+                    </li>
+                    <li>
+                        <a href="#">Register Class</a>
+                    </li>
+                    <li>
+                        <a href="#">Financial Aid</a>
+                    </li>
+                    <li>
+                        <a href="#">Your Account</a>
+                    </li>
+                </ul>
+            </div>
+            <section>
+            <form action="/action_page.php">
+              <div class="container">
+                <h4>Signup here.....</h4>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                <button type="submit" class="registerbtn" id="registerbtn">Create</button>
+              </div>
+              <div class="display" id="display">
+                  <br>
+                  <p>You have been successfully signedup.........</p>
+                  <hr>
+                  <p>Your Signup Information</p>
+                  <hr>   
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" id="display_email" value="" readonly>
+  
+                  <label for="psw"><b>Password</b></label>
+                  <input type="text" id="display_psw" value="" readonly>
+  
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="text" id="display_psw-repeat" value="" readonly>
+                  <div>
+                    <p>Already have an account? <a id="sign_id" href="#">Sign in</a>.</p>
+                  </div>
+              </div>
+              <div class="container signin">
+                <p>Already have an account? <a id="signIn" href="#">Sign in</a>.</p>
+              </div>
+                
+              <div class="another_container" >
+                <br>
+                <h4>Log into your account</h4>
+                <hr>
+
+                <label for="email"><b>Email ID</b></label>
+                <input type="text" placeholder="Enter Email" name="email1" id="email1" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw1" id="psw1" required>
+
+                <button type="button" class="logbtn">Login</button>
+              </div>
+                <div class="login_display_container" >
+                <br>
+                <h4>You have been successfully logged in</h4>
+                <hr>
+                <img  src="/FinalProject/home_page_images/giphy.gif" alt="">
+              </div>
+            </form>
+                
+            </section>         
+            
+            <footer>
+                <p>&copy Auburn University at Montgomery</p>
+                <p>Built by: Yasmin Ara</p>
+                <p>mara@aum.edu</p>
+            </footer>
+        </main>
+    <script>  
+        $(document).ready(function(){  
+            var correct_email_address="";
+            $("#signIn").click(function(){
+                    $(".another_container").show();
+                    $(".container").hide();
+                });
+            $("#sign_id").click(function(){
+                    $(".another_container").show();
+                    $(".container").hide();
+                    $("#display").hide();
+                });
+                
+            $('#email').focusout(function(){
+
+                $('#email').filter(function(){
+                var emil=$('#email').val();
+                var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                if( !emailReg.test( emil ) ) {
+                    alert('Please enter valid email');
+                } else {
+                    alert('Thank you for your valid email');
+                    correct_email_address =$('#email').val();
+                 }
+            });
+        });               
+        $("#registerbtn").click(function(){
+             $("#display").show();
+            $(".login_display_container").hide();
+             $(".container").hide();
+             $("#display_email").val(correct_email_address);
+             $("#display_psw").val('XXXXXXXX');
+             $("#display_psw-repeat").val('XXXXXXXX');
+             $("#signIn").show();
+        });             
+        $(".logbtn").click(function(){
+            $(".login_display_container").show();
+            $(".another_container").hide();
+        });       
+    });            
+            
+    </script>
+    </body>
+</html>
